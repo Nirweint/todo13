@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {todolistApi} from "../api/todolist-api";
 
 export default {
-    title: 'API',
+    title: 'API TODOLISTS',
 }
 
 
@@ -25,7 +25,7 @@ export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
 
     useEffect(() => {
-        todolistApi.createTodolist('reavt')
+        todolistApi.createTodolist('react')
             .then((res) => {
                 setState(res.data);
             })
@@ -39,7 +39,7 @@ export const DeleteTodolist = () => {
     const [state, setState] = useState<any>(null)
 
     useEffect(() => {
-        const todolistId = '39edb913-9a7b-4f15-99c6-958572748a77';
+        const todolistId = '99268644-c301-475b-bfbc-68f717cae009';
 
         todolistApi.deleteTodolist(todolistId)
         .then( (res) => {

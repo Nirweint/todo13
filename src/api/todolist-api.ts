@@ -32,7 +32,7 @@ type TodoType = {
 }
 
 
-type ResponseType<T = {}> = {
+export type ResponseType<T = {}> = {
     fieldsError: string[]
     resultCode: number
     messages: string[]
